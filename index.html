@@ -14,34 +14,49 @@
 
   <div class="container">
     <main>
-      <form action="#" method="get" class="row mt-4">
+      <form action="#" method="get" class="row mt-4 needs-validation" novalidate>
         <div class="col">
           <h1 class="mb-3">Registro</h1>
           <hr class="my-4">
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">
+                ponga nombre mijo
+              </div>
             </div>
 
             <div class="col-sm-6">
               <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellido">
+              <input type="text" class="form-control" id="apellido" required>
+              <div class="invalid-feedback">
+                ponga nombre mijo
+              </div>
             </div>
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">
+                ponga nombre mijo
+              </div>
             </div>
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1">
+              <input type="password" class="form-control" id="password1" minlength="6" required>
+              <div class="invalid-feedback">
+                ponga nombre mijo
+              </div>
             </div>
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2">
+              <input type="password" class="form-control" id="password2" minlength="6" required>
+              <div class="invalid-feedback">
+                ponga nombre mijo
+              </div>
             </div>
 
             <div class="col-sm-12">
@@ -50,7 +65,7 @@
             </div>
 
 
-            <button class="btn btn-primary" type="submit">Registrarme</button>
+            <button class="btn btn-primary" id="btnRegistrarme" type="submit">Registrarme</button>
 
 
           </div>

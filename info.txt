@@ -1,0 +1,28 @@
+Validación de Restricciones:
+
+En HTML5, puedes usar atributos como required, min, max, pattern, email, tel, number, entre otros, para establecer restricciones en los campos de formulario.
+El atributo required se utiliza para hacer que un campo sea obligatorio, lo que significa que el usuario debe completarlo para enviar el formulario.
+Los atributos min y max se usan para establecer rangos numéricos válidos para campos numéricos.
+El atributo pattern permite definir una expresión regular que especifica el formato válido del campo, como una dirección de correo electrónico o un número de teléfono.
+Feedback en Validaciones (por ejemplo, con Bootstrap):
+
+Bootstrap ofrece clases específicas para dar feedback visual en la validación de formularios. Estas clases son is-valid y is-invalid.
+Puedes aplicar estas clases a los elementos de formulario para resaltar visualmente los campos que cumplen o no cumplen con las restricciones de validación.
+Por ejemplo, puedes agregar la clase is-valid a un campo de entrada para que aparezca con un borde verde cuando se complete correctamente.
+Atributo novalidate:
+
+El atributo novalidate se agrega al elemento <form> en HTML y se utiliza para desactivar la validación de formularios nativa del navegador.
+Esto es útil cuando deseas realizar tu propia validación en JavaScript y no quieres que el navegador aplique automáticamente sus restricciones de validación.
+Estados :valid e :invalid:
+
+Las pseudo-clases :valid e :invalid se aplican a los elementos de formulario en función de si cumplen o no con las restricciones de validación.
+Puedes usar estas clases en tu hoja de estilos CSS para personalizar la apariencia de los campos de formulario en función de su estado de validación.
+Métodos setCustomValidity() y checkValidity():
+
+setCustomValidity() es un método de JavaScript que se utiliza para establecer un mensaje de error personalizado en un campo de formulario. Esto permite personalizar los mensajes de error que se muestran cuando un campo no cumple con las restricciones de validación.
+checkValidity() es un método que se llama en un campo de formulario para verificar si cumple con todas las restricciones de validación. Devuelve true si es válido y false si no lo es.
+Evento submit y los métodos preventDefault() y stopPropagation():
+
+El evento submit se dispara cuando se envía un formulario, ya sea haciendo clic en el botón de envío o llamando al método submit() del formulario en JavaScript.
+preventDefault() es un método que se utiliza en manejadores de eventos para evitar que la acción predeterminada (enviar el formulario) ocurra. Esto es útil para realizar validaciones personalizadas antes de enviar el formulario.
+stopPropagation() se utiliza para evitar que un evento se propague a través de elementos anidados. Puede ser útil cuando se manejan eventos en elementos dentro del formulario sin afectar a otros elementos.
